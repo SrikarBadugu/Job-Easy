@@ -4,16 +4,36 @@ Job Easy is a web application designed to simplify the job search process. This 
 
 ## Table of Contents
 
+- [Overview](#Overview)
+- [TechStack](TechStack)
 - [Key Features](#key-features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Homepage](#homepage)
+- [SystemArchitecture](#SystemArchitecture)
 - [Project Structure](#project-structure)
 - [ML Models](#ml-models)
 - [Diagram](#diagram)
 - [Contributing](#contributing)
 
+## Overview
 
+Job Easy is a full-stack web application built using Django and MySQL that integrates machine learning models to provide personalized job recommendations based on users’ MBTI personality type and extracted skills.
+
+The system combines:
+
+- User authentication and profile management
+- Resume parsing and skill extraction
+- Personality prediction using NLP models
+- Intelligent job recommendation engine
+
+## Tech Stack
+
+**Backend:** Django, Python  
+**Database:** MySQL  
+**Machine Learning:** Scikit-learn, CatBoost, XGBoost, SVM  
+**NLP:** TF-IDF Vectorization  
+**Frontend:** HTML, CSS, Django Templates 
 
 ## Key Features
 
@@ -77,6 +97,15 @@ Once the server is running, open your web browser and navigate to `http://127.0.
 ## Homepage
 
 ![Homepage Screenshot](assets/homepage.png)
+
+
+## System Architecture
+
+1. User registers and completes personality quiz.
+2. Text responses are preprocessed and vectorized.
+3. ML models predict MBTI personality dimensions.
+4. Resume skills are extracted and matched against the job dataset.
+5. Personalized job recommendations are generated.
 
 ## Project Structure
 
